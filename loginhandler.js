@@ -13,6 +13,7 @@ function loginhandler(session) {
 		loginButton.innerHTML = 'Logging in...';		
 		
 		formData.append('server', document.getElementById('server'+session).value);
+		formData.append('port', document.getElementById('port'+session).value);
 		formData.append('nutzer', document.getElementById('nutzer'+session).value);
 		formData.append('passwort', document.getElementById('passwort'+session).value);
 		

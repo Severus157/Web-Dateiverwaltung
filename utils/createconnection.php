@@ -10,7 +10,7 @@
 		$ftp = new \FtpClient\FtpClient();
 		
 		try {
-			$ftp->connect($_SESSION['ip1'], false, 21, 5);
+			$ftp->connect($_SESSION['ip1'], false, $_SESSION['port1'], 5);
 		}
 		catch (Exception $e) {
 			header('HTTP/1.1 460 No connection possible', true);
@@ -31,7 +31,7 @@
 		$ftp = new \FtpClient\FtpClient();
 		
 		try {
-			$ftp->connect($_SESSION['ip2'], false, 21, 5);
+			$ftp->connect($_SESSION['ip2'], false, $_SESSION['port2'], 5);
 		}
 		catch (Exception $e) {
 			header('HTTP/1.1 460 No connection possible', true);

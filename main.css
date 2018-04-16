@@ -1,12 +1,25 @@
 .jumbotron {
-  max-height: 200px;
-  font-family: Oswald, sans-serif;
-    src: url(https://fonts.googleapis.com/css?family=Oswald);
-  font-weight: lighter;
+   max-height: 20%;
+   padding-top: -20px;
+   font-size-adjust: 1em;
+   font-family: Oswald, sans-serif;
+     src: url(https://fonts.googleapis.com/css?family=Oswald);
+   font-weight: lighter;
+   background:
+     linear-gradient(darkcyan 10%, white 90%), url('img/clouds.jpg');
+   background-blend-mode: screen, soft-light;
+   background-size: cover;
+}
+
+.header-text {
+   font-size: 4rem;
+   text-transform: uppercase;
+   color: gray;
+   mix-blend-mode: darken;
 }
 
 .button_row {
-  padding-right: 2em;
+   padding-right: 2em;
 }
 
 .image_button {

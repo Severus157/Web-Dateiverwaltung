@@ -30,7 +30,7 @@ include('createconnection.php');
 		$ftp->chdir($_SESSION['aktordner1']);
 		$aktordner = $_SESSION['aktordner1'];
 
-		$items = $ftp->scanDir(false);	
+		$items = $ftp->scanDir();
 
 		$ftp->close();
 	
@@ -40,7 +40,7 @@ include('createconnection.php');
 		$ftp->chdir($_SESSION['aktordner2']);
 		$aktordner = $_SESSION['aktordner2'];
 
-		$items = $ftp->scanDir(false);	
+		$items = $ftp->scanDir();	
 
 		$ftp->close();
 	
@@ -59,10 +59,10 @@ echo "</tr>";
  global $dateien, $ordners;
 
 foreach($items as $dateiordner){
-	if ($dateiordner['type'] == "file"){
+	if ($dateiordner['type'] == 'file'){
 	$dateien[] = $dateiordner;
 	}
-	if ($dateiordner['type'] == "directory"){
+	if ($dateiordner['type'] == 'directory'){
 	$ordners[] = $dateiordner;
 	}
 }
