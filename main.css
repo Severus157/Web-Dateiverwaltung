@@ -12,6 +12,7 @@
 }
 
 .header-text {
+   padding-top: -40px;
    font-size: 4rem;
    text-transform: uppercase;
    color: gray;
